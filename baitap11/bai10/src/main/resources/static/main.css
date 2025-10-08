@@ -1,0 +1,44 @@
+.hidden {
+    display: none;
+}
+#username-page {
+    text-align: center;
+}
+.username-page-container {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    margin-top: 42px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px 55px 35px;
+}
+#chat-page {
+    position: relative;
+    height: 400px;
+}
+.chat-container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: 30px;
+}
+#messageArea {
+    list-style-type: none;
+    padding: 20px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.chat-message {
+    padding-left: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.event-message {
+    text-align: center;
+    color: #777;
+}

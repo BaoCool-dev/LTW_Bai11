@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <title>Chat Hỗ Trợ Khách Hàng</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="username-page">
+    <div class="username-page-container">
+        <h1 class="title">Nhập tên của bạn</h1>
+        <form id="usernameForm" name="usernameForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Tên" autocomplete="off" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Bắt đầu Chat</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="chat-page" class="hidden">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Hỗ trợ trực tuyến</h2>
+        </div>
+        <div class="connecting">
+            Đang kết nối...
+        </div>
+        <ul id="messageArea">
+        </ul>
+        <form id="messageForm" name="messageForm" class="mt-3">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" id="message" placeholder="Nhập tin nhắn..." autocomplete="off" class="form-control"/>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Gửi</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/main.js"></script>
+
+</body>
+</html>
